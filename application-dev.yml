@@ -111,8 +111,8 @@ paascloud:
       expiredMinutes: 120
   aliyun:
     key:
-      accessKeyId: maTnALCpSvWjxyAy
-      accessKeySecret: 0Ou6P67WhuSHESKrwJClFqCKo5BuBf
+      accessKeyId: LTAINtlIHaPNmFee
+      accessKeySecret: fQbJqDyEmQ5FojBtZqxdrhh3IOhm0N 
     rocketMq:
       namesrvAddr: 192.168.2.100:9876
     sms:
