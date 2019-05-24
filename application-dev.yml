@@ -109,31 +109,6 @@ paascloud:
     jwt:
       expiredRemainMinutes: 20
       expiredMinutes: 120
-  aliyun:
-    key:
-      accessKeyId: 'your aliyun accessKeyId'
-      accessKeySecret: 'your aliyun accessKeySecret'
-    rocketMq:
-      namesrvAddr: paascloud-mq-rocket:9876
-    sms:
-      signName: 快乐学习网
-      regionId: cn-beijing
-      endpoint:
-      endpointName: cn-beijing
-      product: 'your sms product'
-      domain: dysmsapi.aliyuncs.com
-  qiniu:
-    key:
-      accessKey: 'your qiniu accessKey'
-      secretKey: 'your qiniu secretKey'
-    oss:
-      privateHost: 'your qiniu oss private host'
-      publicHost: 'your qiniu oss public host'
-  alipay:
-    callback:
-      url: http://dev-api.paascloud.net/omc/pay/alipayCallback
-    qrCode:
-      pcPath: /data/file/qrCode/alipay
-      qiniuPath: alipay/QRCode/
+
   zk:
     zkAddressList: paascloud-provider-zk:2181,paascloud-provider-zk:2182,paascloud-provider-zk:2183
