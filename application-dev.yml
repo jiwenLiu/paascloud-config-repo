@@ -111,10 +111,10 @@ paascloud:
       expiredMinutes: 120
   aliyun:
     key:
-      accessKeyId: 'your aliyun accessKeyId'
-      accessKeySecret: 'your aliyun accessKeySecret'
+      accessKeyId: maTnALCpSvWjxyAy
+      accessKeySecret: 0Ou6P67WhuSHESKrwJClFqCKo5BuBf
     rocketMq:
-      namesrvAddr: paascloud-mq-rocket:9876
+      namesrvAddr: 192.168.2.100:9876
     sms:
       signName: 快乐学习网
       regionId: cn-beijing
