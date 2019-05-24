@@ -13,13 +13,13 @@ spring:
     proxy-target-class: true
     auto: true
   rabbitmq:
-    host: 192.168.2.100
+    host: paascloud-mq-rabbit
     port: 5672
     username: guest
     password: guest
   redis:
-    host: 192.168.2.100
-    password: 123456
+    host: paascloud-db-redis
+    password: paascloud@redis
     port: 6379
     timeout: 0
   datasource:
@@ -36,8 +36,8 @@ spring:
         exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
       stat-view-servlet:
         allow:
-        login-username: root
-        login-password: root
+        login-username: admin
+        login-password: admin
   mail:
     host: smtp.163.com
     username: paascloudTest@163.com
@@ -111,10 +111,10 @@ paascloud:
       expiredMinutes: 120
   aliyun:
     key:
-      accessKeyId: LTAINtlIHaPNmFee
-      accessKeySecret: fQbJqDyEmQ5FojBtZqxdrhh3IOhm0N 
+      accessKeyId: 'your aliyun accessKeyId'
+      accessKeySecret: 'your aliyun accessKeySecret'
     rocketMq:
-      namesrvAddr: 192.168.2.100:9876
+      namesrvAddr: paascloud-mq-rocket:9876
     sms:
       signName: 快乐学习网
       regionId: cn-beijing
@@ -136,4 +136,4 @@ paascloud:
       pcPath: /data/file/qrCode/alipay
       qiniuPath: alipay/QRCode/
   zk:
-    zkAddressList: 192.168.2.100:2181,192.168.2.100:2182,192.168.2.100:2183
+    zkAddressList: paascloud-provider-zk:2181 
