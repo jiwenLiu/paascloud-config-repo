@@ -36,8 +36,8 @@ spring:
         exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
       stat-view-servlet:
         allow:
-        login-username: admin
-        login-password: admin
+        login-username: root
+        login-password: root
   mail:
     host: smtp.163.com
     username: paascloudTest@163.com
@@ -136,4 +136,4 @@ paascloud:
       pcPath: /data/file/qrCode/alipay
       qiniuPath: alipay/QRCode/
   zk:
-    zkAddressList: paascloud-provider-zk:2181 
+    zkAddressList: paascloud-provider-zk:2181,paascloud-provider-zk:2182,paascloud-provider-zk:2183
