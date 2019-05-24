@@ -111,4 +111,4 @@ paascloud:
       expiredMinutes: 120
 
   zk:
-    zkAddressList: paascloud-provider-zk:2181,paascloud-provider-zk:2182,paascloud-provider-zk:2183
+    zkAddressList: paascloud-provider-zk:2181
