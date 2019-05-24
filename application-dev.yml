@@ -18,8 +18,8 @@ spring:
     username: guest
     password: guest
   redis:
-    host: paascloud-db-redis
-    password: paascloud@redis
+    host: 192.168.2.100
+    password: 123456
     port: 6379
     timeout: 0
   datasource:
@@ -36,8 +36,8 @@ spring:
         exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
       stat-view-servlet:
         allow:
-        login-username: admin
-        login-password: admin
+        login-username: root
+        login-password: root
   mail:
     host: smtp.163.com
     username: paascloudTest@163.com
@@ -136,4 +136,4 @@ paascloud:
       pcPath: /data/file/qrCode/alipay
       qiniuPath: alipay/QRCode/
   zk:
-    zkAddressList: paascloud-provider-zk:2181
+    zkAddressList: 192.168.2.100:2181,192.168.2.100:2182,192.168.2.100:2183
