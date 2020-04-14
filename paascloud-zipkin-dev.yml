@@ -12,7 +12,7 @@ spring:
 zipkin:
   collector:
     rabbitmq:
-      addresses: paascloud-mq-rabbit:5672
+      addresses: localhost:5672
       username: awen
       password: awen
       queue: zipkin
