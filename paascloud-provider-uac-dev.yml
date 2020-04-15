@@ -43,14 +43,14 @@ security:
 
 paascloud:
   enableSqlLogInterceptor: false
-  aliyun:
-    rocketMq:
-      enable: true
-      reliableMessageConsumer: false
-      reliableMessageProducer: true
-      instanceName: paascloud-provider-uac
-      consumerGroup: CID_UAC
-      producerGroup: PID_UAC
+  #aliyun:
+    #rocketMq:
+      #enable: true
+      #reliableMessageConsumer: false
+      #reliableMessageProducer: true
+      #instanceName: paascloud-provider-uac
+      #consumerGroup: CID_UAC
+      #producerGroup: PID_UAC
   auth:
     rest-pwd-url: http://dev-login.paascloud.net/resetPwd?resetPwdKey=
     active-user-url: http://dev-api.paascloud.net:7979/uac/auth/activeUser/
