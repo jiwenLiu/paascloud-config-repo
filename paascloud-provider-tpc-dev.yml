@@ -52,14 +52,14 @@ paascloud:
     maxSendTimes: 7
     handleTimeout: 5
     resendMultiplier: 2
-  #aliyun:
-    #rocketMq:
-     # enable: false
-      #reliableMessageConsumer: false
-      #reliableMessageProducer: true
-      #namesrvAddr: paascloud-mq-rocket:9876
-      #instanceName: paascloud-provider-tpc
-      #producerGroup: PID_TPC
+  aliyun:
+    rocketMq:
+      enable: false
+      reliableMessageConsumer: false
+      reliableMessageProducer: true
+      namesrvAddr: paascloud-mq-rocket:9876
+      instanceName: paascloud-provider-tpc
+      producerGroup: PID_TPC
   oauth2:
     jwtSigningKey: paascloud
     client:
@@ -69,9 +69,9 @@ paascloud:
       clientSecret: ${security.oauth2.client.clientSecret}
       clientAuthenticationScheme: header
       tokenStore: jwt
-  #zk:
-    #zkAddressList: paascloud-provider-zk:2181
-    #namespace: paascloud-elastic-job
+  zk:
+    zkAddressList: paascloud-provider-zk:2181
+    namespace: paascloud-elastic-job
   job:
     task:
       dingTalk:
